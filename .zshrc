@@ -3,7 +3,9 @@
 eval "$(pyenv init -)"
 
 # Homebrew
-eval "$(/usr/local/bin/brew shellenv)"
+# If on an Intel machine, use the following instead
+# eval "$(/usr/local/bin/brew shellenv)"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Helpful stuff
 alias ll='ls -sail'
@@ -21,5 +23,5 @@ eval `keychain --eval --agents ssh --inherit any <ssh-file-name>`
 
 # Git prompt (needs to be downloaded to this spot first)
 # mkdir -p ~/.zsh
-# git clone --depth=1 https://github.com/woefe/git-prompt.zsh ~/.zsh/git-prompt.zsh
+# git clone --depth=1 https://github.com/jwfriese/git-prompt.zsh ~/.zsh/git-prompt.zsh
 source ~/.zsh/git-prompt.zsh/git-prompt.zsh
