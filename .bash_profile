@@ -1,7 +1,5 @@
 # Allow brew to be found in path
 eval "$(/opt/homebrew/bin/brew shellenv)"
-# If not on Apple silicon, this should be this instead
-# eval "$(/usr/local/bin/brew shellenv)"
 
 # the alias section
 alias ll='ls -sail'
