@@ -3,8 +3,6 @@
 eval "$(pyenv init -)"
 
 # Homebrew
-# If on an Intel machine, use the following instead
-# eval "$(/usr/local/bin/brew shellenv)"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Helpful stuff
