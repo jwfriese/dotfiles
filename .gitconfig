@@ -22,3 +22,10 @@
 	added = green
 	changed = red
 	untracked = cyan
+[core]
+	excludesfile = /Users/jwfriese/.gitexclude
+	editor = /usr/bin/vim
+[init]
+	defaultBranch = main
+[fetch]
+	prune = true
