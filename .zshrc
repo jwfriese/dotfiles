@@ -25,3 +25,8 @@ eval `keychain --eval --agents ssh --inherit any <ssh-file-name>`
 # mkdir -p ~/.zsh
 # git clone --depth=1 https://github.com/jwfriese/git-prompt.zsh ~/.zsh/git-prompt.zsh
 source ~/.zsh/git-prompt.zsh/git-prompt.zsh
+
+# Useful when overwriting non-standard MacOS implementations of things like sed.
+# By the way, you should definitely overwrite sed: `brew install gnu-sed`
+export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
+export USE_GNU_SED=true
