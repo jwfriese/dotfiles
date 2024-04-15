@@ -28,3 +28,16 @@ source ~/.zsh/git-prompt.zsh/git-prompt.zsh
 # By the way, you should definitely overwrite sed: `brew install gnu-sed`
 export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
 export USE_GNU_SED=true
+
+# Go stuff
+export GOPATH="$HOME/workspace/go"
+export GOBIN="$GOPATH/bin"
+export PATH="$GOBIN:$PATH"
+
+# Rust path
+export PATH="$HOME/.cargo/bin:$PATH"
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
